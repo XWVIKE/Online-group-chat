@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>chatroom</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="box">
+    <div id="head"><img src="img/14.jpg">
+        <p>猫的聊天室</p></div>
+    <div>
+        <div id="dialog">
+            <div class="other-people">
+                <div><img src="img/14.jpg"><span>猫BOSS</span></div>
+                <p>hello,大家好。</p>
+            </div>
+            <div class="me">
+                <div><img src="img/13.jpg"></div>
+                <p>请尝试点击发送按钮，创建一个昵称加入聊天。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="userinfo">
+        <div id="notice">
+            <p>公告栏</p>
+        </div>
+        <p>在线人数:<span id="online">0</span></p>
+        <ul id="userlist">
+        </ul>
+    </div>
+    <div id="input">
+        <div id="tool">
+            <ul>
+                <li id="expression"><img src="img/表情.svg"></li>
+                <li id="picture">
+                    <label>
+                        <img src="img/图片.svg">
+                        <input id="upPic" type="file" accept="image/png,image/jpg,image/jpeg" style="display: none">
+                    </label>
+                </li>
+            </ul>
+            <div id="expressionBox">
+                <ul id="emojiList">
+                    <li>😀</li>
+                    <li>😁</li>
+                    <li>😂</li>
+                    <li>🤣</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😅</li>
+                    <li>😆</li>
+                    <li>😉 </li>
+                    <li>😊</li>
+                    <li>😋</li>
+                    <li>😎</li>
+                    <li>😍</li>
+                    <li>😘</li>
+                    <li>🥰</li>
+                    <li>😗</li>
+                    <li>😙</li>
+                    <li>😚</li>
+                    <li>☺️</li>
+                    <li>🙂</li>
+                    <li>🤗</li>
+                    <li>🤩</li>
+                    <li>🤔</li>
+                    <li>🤨</li>
+                    <li>😐</li>
+                    <li>😑</li>
+                    <li>😶 </li>
+                    <li>🙄</li>
+                    <li>😏</li>
+                    <li>😣</li>
+                    <li>😥</li>
+                    <li>😮</li>
+                    <li>🤐</li>
+                    <li>😯</li>
+                    <li>😪</li>
+                    <li>😫 </li>
+                    <li>😴</li>
+                    <li>😌</li>
+                    <li>😛</li>
+                    <li>😜</li>
+                    <li>😝</li>
+                    <li>🤤</li>
+                    <li>😒</li>
+                    <li>😓</li>
+                    <li>😔 </li>
+                    <li>😕</li>
+                    <li>🙃</li>
+                    <li>🤑</li>
+                    <li>😲</li>
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😖</li>
+                    <li>😞</li>
+                    <li>😟 </li>
+                    <li>😤</li>
+                    <li>😢</li>
+                    <li>😭</li>
+                    <li>😦</li>
+                    <li>😧</li>
+                    <li>😨</li>
+                    <li>😩</li>
+                    <li>🤯</li>
+                    <li>😬 </li>
+                    <li>😰</li>
+                    <li>😱</li>
+                    <li>🥵</li>
+                    <li>🥶</li>
+                    <li>😳</li>
+                    <li>🤪</li>
+                    <li>😵</li>
+                    <li>😡</li>
+                    <li>😠 </li>
+                    <li>🤬</li>
+                    <li>😷</li>
+                    <li>🤒</li>
+                    <li>🤕</li>
+                    <li>🤢</li>
+                    <li>🤮</li>
+                    <li>🤧</li>
+                    <li>😇</li>
+                    <li>🤠 </li>
+                    <li>🤡</li>
+                    <li>🥳</li>
+                    <li>🥴</li>
+                    <li>🥺</li>
+                    <li>🤥</li>
+                    <li>🤫</li>
+                    <li>🤭</li>
+                    <li>🧐</li>
+                    <li>🤓 </li>
+                    <li>😈</li>
+                    <li>👿</li>
+                    <li>👹</li>
+                    <li>👺</li>
+                    <li>💀</li>
+                    <li>👻</li>
+                    <li>👽</li>
+                    <li>🤖</li>
+                    <li>💩 </li>
+                    <li>😺</li>
+                    <li>😸</li>
+                    <li>😹</li>
+                    <li>😻</li>
+                    <li>😼</li>
+                    <li>😽</li>
+                    <li>🙀</li>
+                    <li>😿</li>
+                    <li>😾</li>
+                </ul>
+            </div>
+        </div>
+        <div id="textarea" contenteditable="true">
+        </div>
+        <div id="send">发送</div>
+    </div>
+</div>
+<div id="login">
+    <img id="shutdown" src="img/shutdown.svg">
+    <div id="allHead">
+        <ul id="allHeadList">
+            <li><img src="img/1.jpg"></li>
+            <li><img src="img/2.jpg"></li>
+            <li><img src="img/3.jpg"></li>
+            <li><img src="img/4.jpg"></li>
+            <li><img src="img/5.jpg"></li>
+            <li><img src="img/6.jpg"></li>
+            <li><img src="img/27.jpg"></li>
+            <li><img src="img/8.jpg"></li>
+            <li><img src="img/9.jpg"></li>
+            <li><img src="img/10.jpg"></li>
+            <li><img src="img/11.jpg"></li>
+            <li><img src="img/12.jpg"></li>
+            <li><img></li>
+            <li><img src="img/14.jpg"></li>
+            <li><img src="img/18.jpg"></li>
+        </ul>
+    </div>
+    <div>
+        <img id="userava" src="img/13.jpg">
+        <input id="username" type="text" name="username" placeholder="昵称" value="">
+        <!--<input id="password" type="password" name="password" placeholder="密码" value="">-->
+        <!--<div id="judge">注册过么？<input type="checkbox"></div>-->
+        <input id="but" type="button" value="LOGIN">
+    </div>
+</div>
+<script type="text/javascript" src="js/Animation.js"></script>
+<script type="text/javascript" src="js/loginstyle.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="js/socket-io-client.js"></script>
+</body>
+</html>
